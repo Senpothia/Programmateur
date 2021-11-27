@@ -13,11 +13,11 @@ var getDate = function (req, res, next) {
   next();
 };
 
-app.use(express.static('./'));
+app.use(express.static('public'));
 app.use(getDate);
 
-app.get('/', function (req, res) {
-res.render('index.html');
-});
+app.get('/programmateur', function (req, res) {
+  res.sendFile(__dirname + '/public/programmateur.html');
+  });
 
 module.exports = app;

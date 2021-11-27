@@ -17,7 +17,9 @@
 
 		//$(document).ready(function() {
 		$(function () {
+
 			var socket = io.connect('http://localhost:3000');
+
 			socket.on('message', function (message) {
 				$('#logs').html(message);
 			});
@@ -32,11 +34,11 @@
 
 			$('#btn_port').click(function () {
 				var selection = $("#port-select").val();
-				if (selection === '') return  alert('Vous n\'avez pas sélectionner de port!');
+				if (selection === '') return alert('Vous n\'avez pas sélectionner de port!');
 				socket.emit('port', selection);
 			});
 
-		
+
 		});
 	</script>
 </head>
@@ -96,6 +98,14 @@
 			<div class="col text-center">
 
 				<p>Logs : <span id="logs"></span></p>
+
+			</div>
+		</div>
+
+		<div class="row justify-content-center mt-5">
+			<div class="col text-center">
+
+				<p><a href="http://localhost:3000/programmateur/">Programmer des badges</a></p>
 
 			</div>
 		</div>

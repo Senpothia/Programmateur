@@ -7,7 +7,7 @@ const server = http.createServer(app);
 
 var io = require('socket.io')(server);
 
-var usbserial = 'COM4';
+var usbserial = 'COM3';
 
 // -- SerialPort --
 
