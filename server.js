@@ -14,6 +14,13 @@ var usbserial //= 'COM3';
 var SerialPort = require('serialport');
 var arduino //= new SerialPort(usbserial, { autoOpen: false });
 
+/*
+// list serial ports:
+SerialPort.list().then (
+  ports => ports.forEach(port =>console.log('Port détecté: ' + port.path)),
+  err => console.log(err)
+);
+*/
 
 // Requetes: traitement communication entre HTML et Server
 
@@ -21,6 +28,13 @@ io.sockets.on('connection', function (socket) {
 
   // Message à la connection
   console.log('Connexion socket : Ok');
+
+  
+// list serial ports:
+  SerialPort.list().then (
+    ports => ports.forEach(port =>console.log('Port détecté: ' + port.path)),
+    err => console.log(err)
+  );
 
   socket.emit('message', 'Connexion : Ok\n');   // envoi vers html
   // Le serveur reçoit un message du navigateur    
