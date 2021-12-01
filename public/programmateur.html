@@ -51,14 +51,15 @@
 
 				<h3>Type de badge</h3>
 				<div>
-					<input class="form-check-input" type="radio" name="radio_typeBadge" value="00" unchecked> <label class="form-check-label" for="radio_typeBadge">Badge
+					<input class="form-check-input" type="radio" name="radio_typeBadge" value="00" unchecked> <label
+						class="form-check-label" for="radio_typeBadge">Badge
 						maitre</label>
-					<input class="form-check-input" type="radio" name="radio_typeBadge" value="01" unchecked> <label class="form-check-label"
-						for="radio_typeBadge">Resident</label>
-					<input class="form-check-input" type="radio" name="radio_typeBadge" value="02" checked> <label class="form-check-label"
-						for="radio_typeBadge">Prestataire</label>
-					<input class="form-check-input" type="radio" name="radio_typeBadge" value="FF" unchecked> <label class="form-check-label"
-						for="radio_typeBadge">Pass</label>
+					<input class="form-check-input" type="radio" name="radio_typeBadge" value="01" unchecked> <label
+						class="form-check-label" for="radio_typeBadge">Resident</label>
+					<input class="form-check-input" type="radio" name="radio_typeBadge" value="02" checked> <label
+						class="form-check-label" for="radio_typeBadge">Prestataire</label>
+					<input class="form-check-input" type="radio" name="radio_typeBadge" value="FF" unchecked> <label
+						class="form-check-label" for="radio_typeBadge">Pass</label>
 				</div>
 
 			</div>
@@ -100,7 +101,7 @@
 				<div class="row">
 					<div class="col">
 
-						<table class="table table table-striped">
+						<table class="table  table-striped ">
 
 							<tbody>
 								<tr>
@@ -208,27 +209,31 @@
 					id="id_edit_heureValidBeginHr" maxlength="2" size="2" />
 				Min: <input type="number" name="edit_heureValidBeginMn" value="00" min="0" max="59"
 					id="id_edit_heureValidBeginMn" maxlength="2" size="2" />
-				<div></div>
-
-				Date fin validité:
-				Jour<input type="number" name="edit_dateValidEndDay" value="31" min="0" max="31"
-					id="id_edit_dateValidEndDay" maxlength="2" size="2" />
-				Mois<input type="number" name="edit_dateValidEndMonth" value="12" min="0" max="12"
-					id="id_edit_dateValidEndMonth" maxlength="2" size="2" />
-				Annee<input type="number" name="edit_dateValidEndYear" value="2021" min="1900" max="2100"
-					id="id_edit_dateValidEndYear" maxlength="4" size="4" />
-				<th> Hr: <input type="number" name="edit_heureValidEndHr" value="23" min="0" max="23"
-						id="id_edit_heureValidEndHr" maxlength="2" size="2" /> </th>
-				<th> Min: <input type="number" name="edit_heureValidEndMn" value="59" min="0" max="59"
-						id="id_edit_heureValidEndMn" maxlength="2" size="2" /> </th>
-				</br>
-
-
-				<input type="checkbox" name="edit_joursFeriesValid" checked> <label>Jours Fériés</label>
-				<input type="checkbox" name="edit_joursFeriesValid" checked> <label>Periode vacances</label>
-
-
 			</div>
+		</div>
+
+		<div class="row d-flex justify-content-center align-items-center mt-5 mb-5">
+			<div class="col text-center">
+
+				<h2 class="mb-3">Date fin validité</h2>
+		Jour<input type="number" name="edit_dateValidEndDay" value="31" min="0" max="31" id="id_edit_dateValidEndDay"
+			maxlength="2" size="2" />
+		Mois<input type="number" name="edit_dateValidEndMonth" value="12" min="0" max="12"
+			id="id_edit_dateValidEndMonth" maxlength="2" size="2" />
+		Annee<input type="number" name="edit_dateValidEndYear" value="2021" min="1900" max="2100"
+			id="id_edit_dateValidEndYear" maxlength="4" size="4" />
+		<th> Hr: <input type="number" name="edit_heureValidEndHr" value="23" min="0" max="23"
+				id="id_edit_heureValidEndHr" maxlength="2" size="2" /> </th>
+		<th> Min: <input type="number" name="edit_heureValidEndMn" value="59" min="0" max="59"
+				id="id_edit_heureValidEndMn" maxlength="2" size="2" /> </th>
+		</br>
+
+
+		<input type="checkbox" name="edit_joursFeriesValid" checked> <label>Jours Fériés</label>
+		<input type="checkbox" name="edit_joursFeriesValid" checked> <label>Periode vacances</label>
+
+
+		</div>
 		</div>
 
 
@@ -237,15 +242,25 @@
 
 
 
-				<table class="table table table-striped" width="50%" border="0" cellspacing="0" cellpadding="0">
+				<table class="table table-striped" width="50%" border="0" cellspacing="0" cellpadding="0">
 					<tr>
-						<th colspan="13" align="center"><font size="5">Horaire de validite</font></th>
+						<th colspan="13" align="center">
+							<font size="5">Horaire de validite</font>
+						</th>
 					</tr>
 					<tr>
-						<th colspan="1" align="center"><font size="5">Numero plage validite</font></th>
-						<th colspan="2" align="center"><font size="5">Début</font></th>
-						<th colspan="2" align="center"><font size="5">Fin</font></th>
-						<th colspan="8" align="center"><font size="5">Jour de la semaine</font></th>
+						<th colspan="1" align="center">
+							<font size="5">Numero plage validite</font>
+						</th>
+						<th colspan="2" align="center">
+							<font size="5">Début</font>
+						</th>
+						<th colspan="2" align="center">
+							<font size="5">Fin</font>
+						</th>
+						<th colspan="8" align="center">
+							<font size="5">Jour de la semaine</font>
+						</th>
 					</tr>
 					<tr>
 						<th colspan="1" align="center">Plage 1</th>
@@ -380,13 +395,13 @@
 					id="id_edit_codesiteAuxNb" maxlength="2" size="2" />
 
 				Code site Aux 1: <input type="number" name="edit_codesiteAux1" value="00000001" min="0" max="4294967295"
-					id="id_edit_codesiteAux1" /> 
+					id="id_edit_codesiteAux1" />
 				Code site Aux 2: <input type="number" name="edit_codesiteAux2" value="00000000" min="0" max="4294967295"
-					id="id_edit_codesiteAux2" /> 
+					id="id_edit_codesiteAux2" />
 				Code site Aux 3: <input type="number" name="edit_codesiteAux3" value="00000000" min="0" max="4294967295"
-					id="id_edit_codesiteAux3" /> 
+					id="id_edit_codesiteAux3" />
 				Code site Aux 4: <input type="number" name="edit_codesiteAux4" value="00000000" min="0" max="4294967295"
-					id="id_edit_codesiteAux4" /> 
+					id="id_edit_codesiteAux4" />
 
 
 			</div>
@@ -398,14 +413,15 @@
 
 				<button type="button" class="btn btn-primary" onclick="libraTagEncode()"> Encoder badge </button>
 
-				<button type="button" class="btn btn-primary" onclick="copyToClickBoard('allo')"> Test clipboard </button>
+				<button type="button" class="btn btn-primary" onclick="copyToClickBoard('allo')"> Test clipboard
+				</button>
 
 				<h2 id="myHeader">Contenu du badge a encoder</h2>
 				<p style="color:blueviolet" id="id_tagData">Tag data</p>
 
 
 				<button type="button" class="btn btn-danger" id="btn_prog_on"> Programmez ON</button>
-				
+
 				<p style="color: red;">Logs : <span id="logs"></span></p>
 
 			</div>
@@ -420,7 +436,7 @@
 
 		<!--  **************   JAVASCRIPT     ************************-->
 
-		
+
 		<!--
 		<script>
 
